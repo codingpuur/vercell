@@ -23,7 +23,7 @@ exports.newOrder = asyncErrorHandler(async (req, res, next) => {
     const order = await Order.create({
         shippingInfo,
         orderItems,
-        paymentInfo,
+        
         totalPrice,
         paidAt: Date.now(),
         user: req.user._id,
