@@ -34,7 +34,7 @@ const Payment = () => {
         phoneNo: shippingInfo.phoneNo,
     };
      const [paymentInfo,setpaymentInfo]=useState({
-        id:"",
+        id:"order_LMDDEQO3tYYJcA",
         status:"success", 
      })
     const order = {
