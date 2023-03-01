@@ -22,7 +22,7 @@ const Payment = () => {
 
     const [payDisable, setPayDisable] = useState(false);
 
-    const { shippingInfo, cartItems} = useSelector((state) => state.cart);
+    const { shippingInfo, cartItems,} = useSelector((state) => state.cart);
     const { user } = useSelector((state) => state.user);
     const { error } = useSelector((state) => state.newOrder);
 
@@ -33,9 +33,13 @@ const Payment = () => {
         email: user.email,
         phoneNo: shippingInfo.phoneNo,
     };
+     const [paymentInfo,setpaymentInfo]=useState({
+        id:"",
+        status:"succes", 
+     })
     const order = {
         shippingInfo,
-        
+        paymentInfo,
         orderItems: cartItems,
         totalPrice,
     }
@@ -101,6 +105,7 @@ const Payment = () => {
         console.log(response)
         axios.post('/api/v1/payment/verify',{response:response}).then(res=>{
          console.log(res,33)
+         
          dispatch(newOrder(order));
         }).catch(err=>{
           console.log(err)
@@ -120,6 +125,9 @@ const Payment = () => {
         const _data =totalPrice
         axios.post("/api/v1/payment/orders",_data).then(res=>{
             console.log(res.data.data)
+            console.log(res.data.data.razorpay_order_id)
+
+            setpaymentInfo({...id,id:res.data.data.razorpay_order_id})
             handleOpenRazorpay(res.data.data)
         }).catch(err=>{
             console.log(err)

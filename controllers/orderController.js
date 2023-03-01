@@ -10,7 +10,7 @@ exports.newOrder = asyncErrorHandler(async (req, res, next) => {
     const {
         shippingInfo,
         orderItems,
-    //    paymentInfo,
+       paymentInfo,
         totalPrice,
     } = req.body;
 
@@ -23,10 +23,10 @@ exports.newOrder = asyncErrorHandler(async (req, res, next) => {
     const order = await Order.create({
         shippingInfo,
         orderItems,
-        // paymentInfo,
+        paymentInfo,
         totalPrice,
         paidAt: Date.now(),
-        // user: req.user._id,
+        user: req.user._id,
     });
 
     // await sendEmail({
