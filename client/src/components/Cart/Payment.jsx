@@ -35,7 +35,7 @@ const Payment = () => {
     };
      const [paymentInfo,setpaymentInfo]=useState({
         id:"",
-        status:"succes", 
+        status:"success", 
      })
     const order = {
         shippingInfo,
@@ -127,7 +127,7 @@ const Payment = () => {
             console.log(res.data.data)
             console.log(res.data.data.razorpay_order_id)
 
-            setpaymentInfo({...id,id:res.data.data.razorpay_order_id})
+            setpaymentInfo({...paymentInfo,id:res.data.data.razorpay_order_id})
             handleOpenRazorpay(res.data.data)
         }).catch(err=>{
             console.log(err)
