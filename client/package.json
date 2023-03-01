@@ -2,8 +2,8 @@
   "name": "valentinesaga",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://varcel-gold.vercel.app/",
-  "proxy":"http://localhost:4000",
+  
+  
   
   "dependencies": {
     "@emotion/react": "^11.7.1",
