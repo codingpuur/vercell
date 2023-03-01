@@ -1,0 +1,1 @@
+export const SET_VARIABLE_DATA ="SET_VARIABLE_DATA";

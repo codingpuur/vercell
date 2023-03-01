@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8313f3e1.css",
+    "main.js": "/static/js/main.46b43f0f.js",
+    "static/media/seven.jpg": "/static/media/seven.629b0ab5d0a45fecc65f.jpg",
+    "static/media/one.jpg": "/static/media/one.35a7acefd6f01af77e01.jpg",
+    "static/media/five.jpg": "/static/media/five.2313774ed2f444ccedec.jpg",
+    "static/media/eight.jpg": "/static/media/eight.27726cd90d6c600eb1b7.jpg",
+    "static/media/ten.jpg": "/static/media/ten.ce7de61e8c5cbeacd734.jpg",
+    "static/media/six.jpg": "/static/media/six.0b1033ec94b57649c5ca.jpg",
+    "static/media/three.jpg": "/static/media/three.990409e20dedec22b060.jpg",
+    "static/media/nine.jpg": "/static/media/nine.fdfae1957b9083693606.jpg",
+    "static/media/four.jpg": "/static/media/four.f715b0b5ad876f7612aa.jpg",
+    "static/media/payment-methods.svg": "/static/media/payment-methods.69e7ec34d1302e6b58b2cb1abe6b2f9c.svg",
+    "static/media/two.jpg": "/static/media/two.5caa0d9b692af89232ae.jpg",
+    "static/media/404-not-found.svg": "/static/media/404-not-found.f58b723c5e420e43683574327be5529a.svg",
+    "static/media/kitchen-sale.jpg": "/static/media/kitchen-sale.058c7dbd12f5f0a0be9e.jpg",
+    "static/media/success.png": "/static/media/success.a6e71fb67ec0538ff2ee.png",
+    "static/media/failed.png": "/static/media/failed.25f9a5080785b1e6642c.png",
+    "static/media/gadget-sale.jpg": "/static/media/gadget-sale.ec893927252d46afc4d9.jpg",
+    "static/media/logo.png": "/static/media/logo.b76ad3ba9fc670309f66.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.8313f3e1.css",
+    "static/js/main.46b43f0f.js"
+  ]
+}

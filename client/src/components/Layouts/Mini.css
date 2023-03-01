@@ -1,0 +1,3 @@
+li.relative:hover > ul.hidden {
+    display: block;
+  }
