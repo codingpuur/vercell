@@ -26,7 +26,7 @@ exports.newOrder = asyncErrorHandler(async (req, res, next) => {
         // paymentInfo,
         totalPrice,
         paidAt: Date.now(),
-        user: req.user._id,
+        // user: req.user._id,
     });
 
     // await sendEmail({
