@@ -57,16 +57,7 @@ const orderSchema = new mongoose.Schema({
         ref: "User",
         required: true
     },
-    paymentInfo: {
-        id: {
-            type: String,
-        
-        },
-        status: {
-            type: String,
-            
-        },
-    },
+   
     paidAt: {
         type: Date,
         required: true

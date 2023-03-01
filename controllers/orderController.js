@@ -10,7 +10,7 @@ exports.newOrder = asyncErrorHandler(async (req, res, next) => {
     const {
         shippingInfo,
         orderItems,
-        // paymentInfo,
+    
         totalPrice,
     } = req.body;
 

@@ -22,7 +22,7 @@ const Payment = () => {
 
     const [payDisable, setPayDisable] = useState(false);
 
-    const { shippingInfo, cartItems,paymentInfo } = useSelector((state) => state.cart);
+    const { shippingInfo, cartItems} = useSelector((state) => state.cart);
     const { user } = useSelector((state) => state.user);
     const { error } = useSelector((state) => state.newOrder);
 
@@ -35,7 +35,7 @@ const Payment = () => {
     };
     const order = {
         shippingInfo,
-        paymentInfo,
+        
         orderItems: cartItems,
         totalPrice,
     }
